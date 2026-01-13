@@ -1,9 +1,9 @@
 # Identification de l'étudiant
 
-- <nomComplet1>Entrer votre nom</nomComplet1>
-- <courriel1>Entrer votre courriel</courriel1>
-- <codeMoodle1>Entrer votre code moodle obtenu à partir de Signets, 2 lettres majuscule avec 5 chiffres</codeMoodle1>
-- <githubAccount1>Entrer l'identifiant de votre compte github</githubAccount1>
+- <nomComplet1>Julien Le Blanc</nomComplet1>
+- <courriel1>julien.le-blanc.1@ens.etsmtl.ca</courriel1>
+- <codeMoodle1>AT67750</codeMoodle1>
+- <githubAccount1>Julien2105</githubAccount1>
 
 # Squelette pour un API simple dans Node, Express et TypeScript
 
@@ -151,6 +151,11 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 ## Artefacts d'analyse et de conception
 
 ### Cas d'utilisation
+
+#### Redémarrer
+
+1. Le Joueur demande à redémarrer l'application.
+2. Le Système termine tous les jeux en cours et redémarre l'application.
 
 #### Jouer aux dés
 

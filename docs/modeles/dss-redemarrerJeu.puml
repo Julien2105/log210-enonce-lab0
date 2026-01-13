@@ -1,1 +1,10 @@
 // Vous devez compléter ce fichier
+@startuml DSS pour le sénario Redémarrer
+skinparam Style strictuml
+skinparam packageStyle rect
+skinparam backgroundcolor transparent
+skinparam defaultfontname Verdana
+actor ":Joueur" as J
+participant ":Système" as S
+J -> S : redémarrerJeu()
+@enduml
