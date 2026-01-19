@@ -161,7 +161,7 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 
 1. Le Joueur demande à démarrer le jeu en s'identifiant.
 1. Le Joueur demande à lancer les dés.
-1. Le Système affiche le nom du joueur et le résultat de la partie, ainsi que le nombre de parties et le nombre de fois que le Joueur a gagné. Pour un lancer, si le total est égal à sept, le Joueur a gagné. Dans tous les autres cas, il a perdu.
+1. Le Système affiche le nom du joueur et le résultat de la partie, ainsi que le nombre de parties et le nombre de fois que le Joueur a gagné. Pour un lancer, si le total est plus petit ou égal à dix, le Joueur a gagné. Dans tous les autres cas, il a perdu.
 
 *Le Joueur répète l'étape 3 jusqu'à ce qu'il ait fini.*
 
@@ -200,6 +200,7 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 
 - d1.valeur est devenue un nombre entier aléatoire entre 1 et 6
 - d2.valeur est devenue un nombre entier aléatoire entre 1 et 6
+- d3.valeur est devenue un nombre entier aléatoire entre 1
 - j.nbLancers a été incrémenté sur une base de correspondance avec nom
 - j.nbLancersGagnés a été incrémenté si la totale de d1.valeur et d2.valeur est égale à 7
 
