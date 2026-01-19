@@ -1,43 +1,37 @@
 // Vous devez insérer les nouveaux tests ici
-import { assert } from 'console';
+import supertest from 'supertest';
 import 'jest-extended';
-/*
-describe('redemarrerJeu.test.ts', () => {
-  it("devrait implémenter test", async () => {
-    throw new Error("Ce test n'a pas été défini")
-  });
-});*/
+import app from '../../src/app';
+
+const request = supertest(app);
 
 describe('GET /api/v1/jeu/redemarrerJeu', () => {
 
   beforeAll(async () => {
     // Précondition : des joueurs existent
-    await request(app)
-      .post('/api/v1/jeu/ajouterJoueur')
-      .send({ nom: 'Alice' });
-
-    await request(app)
-      .post('/api/v1/jeu/ajouterJoueur')
-      .send({ nom: 'Bob' });
+    await request.post('/api/v1/jeu/demarrerJeu').send({ nom: 'Alice' });
+    await request.post('/api/v1/jeu/demarrerJeu').send({ nom: 'Bob' });
   });
 
   it('devrait redémarrer le jeu avec succès', async () => {
-    const response = await request(app)
-      .get('/api/v1/jeu/redemarrerJeu');
+    const response = await request.get('/api/v1/jeu/redemarrerJeu');
 
     expect(response.status).toBe(200);
-    expect(response.type).toMatch(/json/);
+    expect(response.type).toBe("application/json");
+    expect(response.body.message).toBe('Success');
   });
 
   it('devrait supprimer tous les joueurs après le redémarrage', async () => {
-    await request(app)
-      .get('/api/v1/jeu/redemarrerJeu');
+    // Redémarrer le jeu
+    await request.get('/api/v1/jeu/redemarrerJeu');
 
-    const response = await request(app)
-      .get('/api/v1/jeu/joueurs');
+    // Vérifier que les joueurs ont été supprimés
+    // On peut le faire en essayant de jouer avec un joueur qui devrait ne plus exister
+    const response = await request.get('/api/v1/jeu/jouer/Alice');
 
-    expect(response.status).toBe(200);
-    expect(response.body.length).toBe(0);
+    // Le joueur n'existe plus, donc on devrait avoir une erreur
+    expect(response.status).toBe(404);
+    expect(response.type).toBe("application/json");
   });
 
 });
