@@ -13,4 +13,10 @@ Plus tard dans le semestre, **si votre équipe porte un manque de performance à
 
 Mettez votre réponse (environ 300 mots) ci-dessous:
 
----
+Bonjour Patrice,
+Je vous écris concernant mes collègues de travail du laboratoire 0. Jack ne s’est présenté à aucune réunion et fait rarement les tâches que l’on lui attribue. Lorsqu’il fait un devoir celui-ci est faux ou incomplet et il ne répond pas à nos messages. Du côté codage, il va de temps en temps faire des commit, mais ceux-ci ne complié pas et ne fait aucun test pour voir et trouver ses erreurs. Il nous ralenti énormément dans notre travail. De plus, il a tendance à mettre le blâme sur tous le reste de l’équipe sans se remettre en question.
+Henry, lui, ne contribue pas plus à l’avancement du groupe. Il est capable de remettre ces devoirs dans les bons délais, mais ceux-ci sont souvent incomplet ou pleins d’erreurs. Il nous a même avoué avoir regarder Netflix toute la journée au lieu d’effectuer son travail attitré. Il ne contribue pas dans les discussions ou dans les réunions, même s’il est présent. Il n’est pas actif dans la conversation de groupe, mais va seulement répondre lorsque l’on va lui envoyer un message individuellement.
+Nous avons essayé de leurs simplifier la tâche en choisissant des tâches plus simples à accomplir en leurs expliquant exactement quoi faire et les critères à remplir, mais nous avons vue aucun changement dans leur comportement. 
+Ils ne méritent pas la note de l’équipe puisqu’ils ne travaillent pas autant que les autres et n’aide en aucun cas à faire avancer le travail à remettre. Nous avons perdu énormément de temps à corriger leurs erreurs et cela m’as forcé à faire de nombreuse nuit blanche. Nous espérons que nous pouviez nous aider à trouver une solution pour que nous ne soyons pas trop pénalisées par le comportement de nos deux collègues de travail. Nous aimerons aussi savoir si notre charge de travail va être réduite si notre équipe est plus petite.
+
+
