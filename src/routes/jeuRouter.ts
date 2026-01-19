@@ -108,19 +108,21 @@ export class JeuRouter {
   /**
    * redémarrer jeu
   */
-  public redemarrerJeu(req: Request, res: Response, next: NextFunction){
-    try{
-      this._controleurJeu.redemarrerJeu();
-      req.flash('info','Application redémarrée');
-      res.status(200).send({
-        message: 'Success',
-        status: res.status
-      });
-    }
-    catch(error){
-        this._errorCode500(error, req, res);
-    }
+  /**
+ * redémarrer jeu
+*/
+public redemarrerJeu(req: Request, res: Response, next: NextFunction) {
+  try {
+    this._controleurJeu.redemarrerJeu();
+    req.flash('info', 'Application redémarrée');
+    res.status(200).send({
+      message: 'Success',
+      status: res.status
+    });
+  } catch (error) {
+    this._errorCode500(error, req, res);
   }
+}
 
   /**
      * Take each handler, and attach to one of the Express.Router's

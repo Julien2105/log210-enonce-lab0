@@ -86,7 +86,7 @@ export class JeuDeDes {
     public get joueurs() {
         return JSON.stringify(Array.from(this._joueurs.values()));
     }
-    public redemarrerJeu(){
+    public redemarrerJeu() {
         this._joueurs.clear()
     }
     
